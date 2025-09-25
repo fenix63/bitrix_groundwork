@@ -1,0 +1,43 @@
+<?
+\Bitrix\Main\Loader::registerAutoLoadClasses('MyCompany.webservice',
+	[
+		'MyCompany\WebService\Sender' => 'lib/interfaces.php',
+		'MyCompany\WebService\WebServiceRequest' => 'lib/interfaces.php',
+		'MyCompany\WebService\WebServiceResponse' => 'lib/interfaces.php',
+		'MyCompany\WebService\WebServiceHandleRequest' => 'lib/interfaces.php',
+		'MyCompany\WebService\WebServiceHandleResponse' => 'lib/interfaces.php',
+		'MyCompany\WebService\WebServiceAbstractFactory' => 'lib/webserviceabstractfactory.php',
+		'MyCompany\WebService\WebServiceRequestFactory' => 'lib/webservicerequestfactory.php',
+		'MyCompany\WebService\WebService' => 'lib/webservicerequestfactory.php',
+		'MyCompany\WebService\RequestRequest' => 'lib/webservicerequestfactory.php',
+		'MyCompany\WebService\ResponseRequest' => 'lib/webservicerequestfactory.php',
+		'MyCompany\WebService\WebServiceResponseFabric' => 'lib/webserviceresponsefactory.php',
+		'MyCompany\WebService\WebServiceResponseSenderFactory' => 'lib/webserviceresponsesenderfactory.php',
+		'MyCompany\WebService\WebServiceResponseHandlerFactory' => 'lib/webserviceresponsehandlerfactory.php',
+		'MyCompany\WebService\ResponseSender' => 'lib/webserviceresponsefactory.php',
+		'MyCompany\WebService\RequestHandler' => 'lib/requesthandler.php',
+		'MyCompany\WebService\RequestSender' => 'lib/requestsender.php',
+		'MyCompany\WebService\ResponseHandler' => 'lib/responsehandler.php',
+		'MyCompany\WebService\ResponseSender' => 'lib/responsesender.php',
+		'MyCompany\WebService\Parser' => 'lib/parser.php',
+		'MyCompany\WebService\Log' => 'lib/logs.php',
+		'MyCompany\WebService\Helper' => 'lib/helper.php',
+		'MyCompany\WebService\Attachments' => 'lib/attachments.php',
+		'MyCompany\WebService\AckSender' => 'lib/acksender.php',
+		'MyCompany\WebService\PrintedForm' => 'lib/printedform.php',
+		
+		'MyCompany\WebService\VSRequestExternelService' => 'lib/interfaces.php',
+		'MyCompany\WebService\VS' => 'lib/interfaces.php',
+		'MyCompany\WebService\VS\Accreditation' => 'lib/vs/accreditation.php',
+		'MyCompany\WebService\VS\Attestation' => 'lib/vs/attestation.php',
+		'MyCompany\WebService\VS\ArchiveReference' => 'lib/vs/archivereference.php',
+		'MyCompany\WebService\VS\Opo' => 'lib/vs/opo.php',
+		'MyCompany\WebService\VS\Transit' => 'lib/vs/transit.php',
+		'MyCompany\WebService\VS\Fns' => 'lib/vs/fns.php',
+		'MyCompany\WebService\VS\Factory' => 'lib/vs/factory.php',
+		'MyCompany\WebService\VS\Gisgmp\Agents' => 'lib/vs/gisgmp/agents.php',
+        'MyCompany\WebService\VS\Gisgmp\ExportPaymentsRequest' => 'lib/vs/gisgmp/exportpaymentsrequest.php',
+        'MyCompany\WebService\VS\Gisgmp\ExportQuittanceRequest' => 'lib/vs/gisgmp/exportquittancerequest.php'
+	]
+);
+?>
